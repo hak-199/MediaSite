@@ -1,0 +1,698 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+header{
+	width: 100%;
+	height: 100px;
+	background: #0C0F38;
+	color: white;
+	display: flex;
+}
+.text{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	margin-left: 9%;
+	align-items: flex-end;
+}
+.text h1{
+	cursor: pointer;
+}
+.main{
+	width: 80%;
+	height: 100%;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 3;
+}
+.main ul{
+	width: 60%;
+	display: flex;
+	justify-content: space-around;
+}
+.main li:first-child a{
+	color: gold;
+}
+.main li{
+	list-style-type: none;
+}
+.main a{
+	color: white;
+	text-decoration: none;
+	transition: .5s;
+}
+.main a:hover{
+	color: gold;
+}
+section{
+	width: 100%;
+	height: 620px;
+	display: flex;
+	justify-content: center;
+	color: white;
+	background: #0C0F38;
+}
+
+.sect{
+	width: 87%;
+	height: 100%;
+	display: flex;
+}
+.sect1{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.sect1 h1{
+	font-size: 68px;
+}
+.sect1 h2{
+	font-size: 45px;
+	color: gold;
+}
+.sect1 div{
+	width: 91%;
+	height: 100%;
+}
+.sect1 p{
+	font-size: 20px;
+	line-height: 30px;
+}
+.sect1 button{
+	width: 150px;
+	height: 45px;
+	font-size: 18px;
+	cursor: pointer;
+	background: white;
+	border: none;
+	transition: .5s;
+}
+.sect1 button:hover{
+	background: black;
+	color: white;
+}
+
+.sect2{
+	width: 50%;
+	height: 100%;
+}
+.sect2 img{
+	width: 100%;
+	height: 100%;
+}
+#news{
+	width: 100%;
+	height: 840px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: -100%;
+}
+.news1{
+	width: 1200px;
+	height: 800px;
+	text-align: center;
+}
+.news1 h2{
+	font-size: 43px;
+}
+.news1 img {
+	width: 600px;
+	height: 500px;
+}
+.news1 p {
+	font-size: 20px;
+	line-height: 30px;
+}
+.news1 button{
+	width: 150px;
+	height: 45px;
+	font-size: 18px;
+	cursor: pointer;
+	background: black;
+	color: white;
+	border: none;
+	transition: .5s;
+}
+.news1 button:hover{
+	background: #8308EB;
+	color: white;
+}
+
+#services{
+	width: 100%;
+	height: 1000px;
+	background: #0C0F38;
+}
+.serv_text{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.serv_text div{
+	width: 500px;
+	font-size: 20px;
+	text-align: center;
+}
+.serv_text div h2{
+	font-size: 45px;
+}
+
+.serv_cubs{
+	width: 100%;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+}
+.cubs{
+	width: 1250px;
+	height: 100%;
+}
+.cubs_div{
+	display: grid;
+	justify-content: center;
+	row-gap: 25px;
+	column-gap: 25px;
+	grid-template-columns: auto auto auto auto;
+}
+.cub{
+	width: 300px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	font-size: 19px;
+	cursor: pointer;
+	text-align: center;
+	border: 1px solid #CECFD7;
+	border-radius: 20px;
+	transition: .5s;
+}
+.cub:hover{
+	background: #8308EB;
+}
+.texto{
+	text-decoration: none;
+	color: white;
+}
+.textik{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	margin-left: 6%;
+	margin-top: 3%;
+	font-size: 25px;
+	align-items: flex-end;
+}
+.cub div{
+	width: 110px;
+	height: 110px;
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	height: 100%;
+	background: #0C0F38;
+	color: white;
+	display: flex;
+
+}
+
+.container h4,p{
+	margin: auto;
+}
+.container img{
+	border-radius: 35%;
+	width: 500px;
+	height: 500px;
+}
+.serv_button{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.serv_button button{
+	width: 150px;
+	height: 45px;
+	font-size: 18px;
+	cursor: pointer;
+	background: white;
+	border: none;
+	transition: .5s;
+}
+.serv_button button:hover{
+	background: #8308EB;
+}
+
+#more{
+	width: 100%;
+	display: none;
+}
+.divik1{
+	width: 100%;
+	height: 170px;
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+}
+.divik1 div{
+	width: 1100px;
+	font-size: 20px;
+	text-align: center;
+}
+.divik1 div h2{
+	font-size: 45px;
+}
+
+.divik2{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+
+}
+.divo{
+	width: 350px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-radius: 25px;
+	border: 2px solid silver;
+}
+.divo p{
+	font-size: 18px;
+}
+/*.divo img{
+	width: 100px;
+	height: 100px;
+}*/
+.divo_zapas{
+	transform: scale(1.1);
+	transition: 0.5s
+}
+.divik_btn{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.divik_btn button{
+	width: 150px;
+	height: 45px;
+	font-size: 18px;
+	cursor: pointer;
+	background: black;
+	color: white;
+	margin-top: 25px;
+	border: none;
+	transition: .5s;
+}
+.divik_btn button:hover{
+	background: #8308EB;
+}
+
+#signup{
+	width: 100%;
+	height: 500px;
+	position: relative;
+
+}
+.datark{
+	width: 100%;
+	height: 250px;
+}
+.guynov{
+	width: 100%;
+	height: 250px;
+	background: #0C0F38;
+}
+.login{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+}
+.form{
+	width: 500px;
+	height: 500px;
+	border-radius: 25px;
+	background: #0C0F38;
+}
+.form form{
+	width: 100%;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.form form input{
+	outline: none;
+}
+.input{
+	width: 350px;
+	height: 40px;
+	border: none;
+	font-size: 18px;
+	border-radius: 15px;
+}
+.mek{
+	margin-top: 40px;
+
+}
+.message{
+	width: 350px;
+	height: 100px;
+	border-radius: 25px;
+	font-size: 18px;
+}
+.submit{
+	width: 150px;
+	height: 65px;
+	border-radius: 25px;
+	font-size: 18px;
+	color: #EF4259;
+}
+
+.contact{
+	width: 100%;
+	height: 260px;
+	background: #0C0F38;
+	text-align: center;
+	color: white;
+}
+.contact h2{
+	font-size: 50px;
+}
+.contact h3{
+	font-size: 35px;
+}
+.contact p{
+	font-size: 20px;
+	line-height: 30px;
+}
+#up{
+	width: 50px;
+	height: 60px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	transition: .7s;
+	display: none;
+	cursor: pointer;
+}
+footer{
+	clear: both;
+	text-align: center;
+	font-size: 19px;
+}
+
+@media(max-width: 1100px){
+	.main ul{
+		width: 70%;
+	}
+	.sect1 p{
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.sect1 h1{
+		font-size: 50px;
+	}
+	.sect1 h2{
+		font-size: 40px;
+	}
+	section{
+		height: 450px;
+	}
+	.news1{
+		width: 900px;
+	}
+	.news1 p{
+		font-size: 16px;
+		line-height: 25px;
+	}
+	.divik1 div{
+		width: 900px;
+	}
+	.divo{
+		width: 300px;
+		height: 340px;
+	}
+	.divik1 div h2{
+		font-size: 40px;
+	}
+	.contact h2{
+		font-size: 45px;
+	}
+	.contact h3{
+		font-size: 30px;
+	}
+	.contact p{
+		font-size: 18px;
+		line-height: 25px;
+	}
+	#up{
+		width: 35px;
+		height: 40px;
+	}
+}
+
+
+@media(max-width: 900px){
+	.main ul{
+		width: 80%;
+	}
+	.news1{
+		width: 700px;
+	}
+	.news1 h2{
+		font-size: 30px;
+	}
+	.news1 img{
+		width: 540px;
+		height: 440px;
+	}
+	.news1 button{
+		width: 130px;
+		height: 35px;
+		font-size: 15px;
+	}
+	.cubs{
+		display: flex;
+		justify-content: space-around;
+	}
+	.cubs_div{
+		display: grid;
+	}
+	#services{
+		height: 1300px;
+	}
+	.serv_cubs{
+		height: 990px;
+	}
+	.divik1 div{
+		width: 730px;
+		font-size: 18px;
+	}
+	#more{
+		height: 1350px;
+	}
+	.divik2{
+		height: 1100px;
+		display: grid;
+	}
+	.divik_btn button:first-child{
+		display: none;
+	}
+	.divik_btn button:last-child{
+		display: none;
+	}
+	.divo p{
+		font-size: 15px;
+	}
+	.sect1 h1{
+		font-size: 40px;
+	}
+	.sect1 h2{
+		font-size: 30px;
+	}
+	.sect1 button{
+		width: 120px;
+		height: 35px;
+		font-size: 15px;
+	}
+	.main{
+		width: 100%;
+	}
+	.main ul{
+		width: 100%;
+	}
+	.sect2{
+		height: 70%;
+	}
+	.news1 img{
+		width: 400px;
+		height: 350px;
+	}
+	#news{
+		align-items: unset;
+		height: 600px;
+	}
+	.news1{
+		height: 600px;
+	} 
+	.serv_button button{
+		width: 130px;
+		height: 35px;
+		font-size: 15px;
+	}
+	.divik_btn button{
+		width: 130px;
+		height: 35px;
+		font-size: 15px;
+	}
+	.contact h2{
+		font-size: xx-large;
+	}
+	.contact h3{
+		font-size: 25px;
+	}
+	.contact p{
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+
+}
+
+
+
+@media(max-width: 600px){
+	.text{
+		margin-left: 2%;
+	}
+	.main{
+		font-size: 17px;
+	}
+	.sect{
+		width: 100%;
+	}
+	.sect2{
+		height: 60%;
+	}
+	.sect1 h1{
+		font-size: 35px;
+	}
+	.sect1 h2{
+		font-size: 25px;
+	}
+	.news1{
+		width: 500px;
+	}
+	.news1 h2{
+		font-size: 25px;
+	}
+	.news1 p{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.serv_text div{
+		font-size: 15px;
+	}
+	.serv_text div h2{
+		font-size: 35px;
+	}
+	.cub{
+		width: 240px;
+		height: 290px;
+	}
+	.cub div{
+		width: 90px;
+		height: 90px;
+	}
+	footer {
+		font-size: 15px;
+	}
+}
+
+
+
+@media(max-width: 480px){
+	.main{
+		width: 120%;
+		font-size: 14px;
+	}
+	.text{
+		font-size: small;
+	}
+	.sect1 div{
+		width: 95%;
+	}
+	.sect1 h1{
+		font-size: 30px;
+	}
+	.sect1 h2{
+		font-size: 20px;
+	}
+	.sect2 {
+		height: 50%;
+	}
+	#news{
+		height: 620px;
+	}
+	.news1{
+		width: 400px;
+	}
+	.cub{
+		width: 180px;
+		height: 270px;
+		font-size: small;
+	}
+	.serv_text div h2{
+		font-size: 30px;
+	}
+	.divik1 div{
+		width: 390px;
+		font-size: 15px;
+	}
+	.divik1 div h2{
+		font-size: 27px;
+	}
+	.form {
+		width: 370px;
+	}
+	.input{
+		width: 280px;
+	}
+	.message{
+		width: 280px;
+		height: 70px;
+	}
+	.contact h2{
+		font-size: x-large;
+	}
+	.contact h3{
+		font-size: 18px;
+	}
+	.contact p{
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.news1 img{
+		width: 319px;
+		height: 290px;
+	}
+}

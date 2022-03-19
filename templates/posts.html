@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+
+</head>
+<body style="background: #0C0F38;">
+
+	<header>
+		<div class="text">
+			<h1><a href="{% url 'news'%}" class="texto">News Today</a></h1>
+		</div>
+
+		<div class="main">
+			<ul>
+				<li><a href="{% url 'news'%}" style="color: unset;">Home</a></li>
+				<li><a href="{% url 'cat' %}" style="color: gold;">Categories</a></li>
+				<li><a href="#">Sevice</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Sing Up</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+	<div class="serv_cubs">
+			<div class="cubs">
+				<div class="cubs_div">
+					{%for post in object_list %}
+							<div class="cub" style="justify-content: center;">
+								<div><img src="{{ post.photo.url }}" alt="" width="115px" height="115px" style="border-radius: 50%;"></div><br>
+								<a href="{% url 'post' post.slug %}" style="text-decoration: none; color: white;">
+									<h3>{{post.name}}</h3>
+									<p style="margin-top: 10px">Category - {{ post.category}}</p>
+								</a>
+							</div>
+					{%endfor%}
+				</div>
+				
+				
+			</div>
+		</div>
+
+</body>
+</html>

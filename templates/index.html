@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+	
+	<header>
+		<div class="text">
+			<h1>News Today</h1>
+		</div>
+
+		<div class="main">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="{% url 'cat' %}">Categories</a></li>
+				<li><a href="#">Sevice</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Sing Up</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<section>
+		<div class="sect">
+			<div class="sect1">
+			<div>
+				<h1>News from around <br> The World</h1>
+				<br>
+				<h2>Landing Page 2022</h2>
+				<br><br>
+				<p>On the site you can find news about politics, sports, science, education and medicine from all over the world.
+				To read the news, click "Get started".</p>
+				<br>
+				<br>
+				<a href="#cubs_serv"><button>Get Started</button></a>
+				
+			</div>
+		</div>
+		<div class="sect2">
+			<img src="{% static '1.png' %}" alt="img">
+		</div>
+	</div>
+	</section>
+
+	<div id="news">
+		<div class="news1">
+			<h2>What’s New In Web Hosting</h2>
+			<br>
+			<img src="{% static '2.jpg' %}" alt="img">
+			<br><br>
+			<p>Credera, a global boutique consulting firm focused on strategy, innovation, data, and technology, today announced the achievement of the Amazon Web Services Data and Analytics Competency. The designation recognizes that Credera has demonstrated success in helping customers evaluate and use modern tools and best practices for collecting, storing, governing, and analyzing data at any scale.</p>
+			<br>
+			<br>
+			<button>Read More</button>
+		</div>
+	</div>
+
+
+	<div id="services">
+		<div class="serv_text" id="cubs_serv">
+			<div>
+				<h2>Latest News</h2>
+				<br>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, voluptatem ipsam fuga nulla illum molestiae earum consequatur ipsum magni facere.!</p>
+			</div>		
+		</div>
+
+		<div class="serv_cubs">
+			<div class="cubs">
+				<div class="cubs_div">
+					{%for post in news_main%}
+						{% if post.public%}
+							<div class="cub">
+								<div><img src="{{ post.photo.url }}" alt="" width="115px" height="115px" style="border-radius: 50%;"></div><br>
+								<a href="{% url 'post' post.slug %}" style="text-decoration: none; color: white;">
+									<h3>{{post.name}}</h3>
+									<p style="margin-top: 10px">Category - {{ post.category}}</p>
+								</a>
+							</div>
+						{% endif %}
+					{%endfor%}
+				</div>
+				
+				
+			</div>
+		</div>
+
+		<div class="serv_button">
+			<button>Read More</button>
+		</div>
+
+	</div>
+
+	<div id="more" style="background: #0C0F38; color: white;">		
+
+
+		<div class="cubs" style="display: initial;">
+				<div class="cubs_div">
+					{%for post in news_more%}
+						{% if post.public%}
+							<div class="cub">
+								<div><img src="{{ post.photo.url }}" alt="" width="115px" height="115px" style="border-radius: 50%;"></div><br>
+								<a href="{% url 'post' post.slug %}" style="text-decoration: none; color: white;">
+									<h3>{{post.name}}</h3>
+									<p style="margin-top: 10px">Category - {{ post.category}}</p>
+								</a>
+							</div>
+						{% endif %}
+					{%endfor%}
+				</div>
+		</div>
+
+
+	</div>
+
+	<div id="signup">
+
+		<div class="login">
+			<div class="form">
+				<form action="">
+					<input class="input mek" type="text" placeholder="Name">
+					<input class="input" type="email" placeholder="Email">
+					<input class="input" type="tel" placeholder="Phone">
+					<input class="message" type="text" placeholder="Message">
+					<input class="submit" type="submit" value="Send">
+				</form>
+			</div>
+		</div>
+		
+		<div class="datark"></div>
+
+		<div class="guynov"></div>
+
+	</div>
+
+	<div class="contact">
+		<h2>Contact now</h2><br>
+		<h3>Free News Landing Page 2022</h3><br>
+		<p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br> ad minim veniam, quissed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis</p>
+	</div>
+
+	<img src="{% static 'img/up.png' %}" id="up" alt="">
+
+	<footer>
+		<p>© 2021 All Rights Reserved. By Hakob Gasparyan</p>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
